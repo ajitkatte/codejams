@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEB320D5-B859-4192-848A-2D46AD6AD328}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TW.ConferenceTrackManagement.Main</RootNamespace>
+    <AssemblyName>TW.ConferenceTrackManagement.Main</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConferenceController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TW.ConferenceTrackManagement.Contract\TW.ConferenceTrackManagement.Contract.csproj">
+      <Project>{E1DAE520-FDF1-46B1-9422-3F4DCDB840A7}</Project>
+      <Name>TW.ConferenceTrackManagement.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TW.ConferenceTrackManagement.Model\TW.ConferenceTrackManagement.Model.csproj">
+      <Project>{33429493-4685-405F-B5AF-256D74ADA001}</Project>
+      <Name>TW.ConferenceTrackManagement.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TW.ConferenceTrackManagement.Parser\TW.ConferenceTrackManagement.Parser.csproj">
+      <Project>{297CCFAB-B845-41B9-8E50-00EEDD8FB64D}</Project>
+      <Name>TW.ConferenceTrackManagement.Parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TW.ConferenceTrackManagement.SchedulePrinter\TW.ConferenceTrackManagement.SchedulePrinter.csproj">
+      <Project>{BBFF0D51-5026-430E-8390-A3B8CDD1A981}</Project>
+      <Name>TW.ConferenceTrackManagement.SchedulePrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TW.ConferenceTrackManagement.Scheduler\TW.ConferenceTrackManagement.Scheduler.csproj">
+      <Project>{65EE81A1-ECBE-4724-A621-C95BCC2EB838}</Project>
+      <Name>TW.ConferenceTrackManagement.Scheduler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TW.ConferenceTrackManagement.TalkReader\TW.ConferenceTrackManagement.TalkReader.csproj">
+      <Project>{40378F26-B237-4138-A2E0-9180FE1880D4}</Project>
+      <Name>TW.ConferenceTrackManagement.TalkReader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <Content Include="talks.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

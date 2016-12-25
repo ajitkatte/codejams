@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.ConferenceTrackManagement.Main", "TW.ConferenceTrackManagement.Main\TW.ConferenceTrackManagement.Main.csproj", "{AEB320D5-B859-4192-848A-2D46AD6AD328}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.ConferenceTrackManagement.Model", "TW.ConferenceTrackManagement.Model\TW.ConferenceTrackManagement.Model.csproj", "{33429493-4685-405F-B5AF-256D74ADA001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.ConferenceTrackManagement.Contract", "TW.ConferenceTrackManagement.Contract\TW.ConferenceTrackManagement.Contract.csproj", "{E1DAE520-FDF1-46B1-9422-3F4DCDB840A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.ConferenceTrackManagement.TalkReader", "TW.ConferenceTrackManagement.TalkReader\TW.ConferenceTrackManagement.TalkReader.csproj", "{40378F26-B237-4138-A2E0-9180FE1880D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.ConferenceTrackManagement.SchedulePrinter", "TW.ConferenceTrackManagement.SchedulePrinter\TW.ConferenceTrackManagement.SchedulePrinter.csproj", "{BBFF0D51-5026-430E-8390-A3B8CDD1A981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.ConferenceTrackManagement.Parser", "TW.ConferenceTrackManagement.Parser\TW.ConferenceTrackManagement.Parser.csproj", "{297CCFAB-B845-41B9-8E50-00EEDD8FB64D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.ConferenceTrackManagement.Scheduler", "TW.ConferenceTrackManagement.Scheduler\TW.ConferenceTrackManagement.Scheduler.csproj", "{65EE81A1-ECBE-4724-A621-C95BCC2EB838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.ConferenceTrackManagement.Tests", "TW.ConferenceTrackManagement.Tests\TW.ConferenceTrackManagement.Tests.csproj", "{FC6A952E-B2A6-446F-8F96-A9DDDE2EB0AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEB320D5-B859-4192-848A-2D46AD6AD328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEB320D5-B859-4192-848A-2D46AD6AD328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEB320D5-B859-4192-848A-2D46AD6AD328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEB320D5-B859-4192-848A-2D46AD6AD328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33429493-4685-405F-B5AF-256D74ADA001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33429493-4685-405F-B5AF-256D74ADA001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33429493-4685-405F-B5AF-256D74ADA001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33429493-4685-405F-B5AF-256D74ADA001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1DAE520-FDF1-46B1-9422-3F4DCDB840A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1DAE520-FDF1-46B1-9422-3F4DCDB840A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1DAE520-FDF1-46B1-9422-3F4DCDB840A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1DAE520-FDF1-46B1-9422-3F4DCDB840A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40378F26-B237-4138-A2E0-9180FE1880D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40378F26-B237-4138-A2E0-9180FE1880D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40378F26-B237-4138-A2E0-9180FE1880D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40378F26-B237-4138-A2E0-9180FE1880D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBFF0D51-5026-430E-8390-A3B8CDD1A981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBFF0D51-5026-430E-8390-A3B8CDD1A981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBFF0D51-5026-430E-8390-A3B8CDD1A981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBFF0D51-5026-430E-8390-A3B8CDD1A981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{297CCFAB-B845-41B9-8E50-00EEDD8FB64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297CCFAB-B845-41B9-8E50-00EEDD8FB64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297CCFAB-B845-41B9-8E50-00EEDD8FB64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297CCFAB-B845-41B9-8E50-00EEDD8FB64D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65EE81A1-ECBE-4724-A621-C95BCC2EB838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65EE81A1-ECBE-4724-A621-C95BCC2EB838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65EE81A1-ECBE-4724-A621-C95BCC2EB838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65EE81A1-ECBE-4724-A621-C95BCC2EB838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6A952E-B2A6-446F-8F96-A9DDDE2EB0AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6A952E-B2A6-446F-8F96-A9DDDE2EB0AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6A952E-B2A6-446F-8F96-A9DDDE2EB0AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6A952E-B2A6-446F-8F96-A9DDDE2EB0AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
