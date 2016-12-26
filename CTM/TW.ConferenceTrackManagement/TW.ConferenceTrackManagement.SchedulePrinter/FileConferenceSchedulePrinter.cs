@@ -24,6 +24,7 @@ namespace TW.ConferenceTrackManagement.SchedulePrinter
                     File.AppendAllText(_fileName, dailyEvent.ToString());
                 }
                 File.AppendAllText(_fileName, Environment.NewLine);
+                trackCounter++;
             }
         }
     }
