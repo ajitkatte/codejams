@@ -21,7 +21,7 @@ namespace TW.ConferenceTrackManagement.SchedulePrinter
                 File.AppendAllText(_fileName, "Track "+trackCounter+Environment.NewLine);
                 foreach (var dailyEvent in track.Events)
                 {
-                    File.AppendAllText(_fileName, dailyEvent.ToString());
+                    File.AppendAllText(_fileName, dailyEvent.ToString() + Environment.NewLine);
                 }
                 File.AppendAllText(_fileName, Environment.NewLine);
                 trackCounter++;
